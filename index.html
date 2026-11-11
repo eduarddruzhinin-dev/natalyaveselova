@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Наталья Веселова — кондитер-шоколатье</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Ctext y=%27.9em%27 font-size=%2790%27%3E🍰%3C/text%3E%3C/svg%3E">
+<style>
+:root{color-scheme:light;--brown:#2d0c07;--tan:#deb98c;--cream:#fbf4ea;--cream2:#f3e6d3;--surf:#ffffff;--text:#2d0c07;--muted:#6b5446;--line:#ecdcc4;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--cream);color:var(--text);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+h1,h2,h3{font-family:Georgia,"Times New Roman",serif;line-height:1.2;margin:0}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+section{padding:56px 0}
+h2{font-size:clamp(26px,5vw,36px);margin-bottom:8px}
+.sub{color:var(--muted);margin:0 0 28px}
+.btn{display:inline-block;background:var(--brown);color:var(--tan);text-decoration:none;font-weight:600;padding:14px 26px;border-radius:999px}
+.btn.ghost{background:transparent;color:var(--brown);border:2px solid var(--brown)}
+.hero{background:var(--brown);color:var(--tan);padding:28px 0 56px}
+.hero .top{margin-bottom:28px}
+.hero .top img{height:64px;width:auto;display:block}
+.hero .wrap.g{display:grid;gap:36px;align-items:center;grid-template-columns:1fr 1.05fr}
+.hero h1{font-size:clamp(32px,6vw,52px);color:#fff7ec}
+.hero h1 em{color:var(--tan);font-style:normal}
+.hero p{font-size:18px;margin:16px 0 26px;color:#ead3b3}
+.hero .btns{display:flex;gap:12px;flex-wrap:wrap}
+.hero .btn{background:var(--tan);color:var(--brown)}
+.hero .btn.ghost{background:transparent;color:var(--tan);border-color:var(--tan)}
+.cover{width:100%;border-radius:22px;display:block;box-shadow:0 18px 50px rgba(0,0,0,.4)}
+.chips{list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:10px}
+.chips li{background:var(--surf);border:1px solid var(--line);padding:10px 18px;border-radius:999px}
+.soft{background:var(--cream2)}
+.grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fill,minmax(230px,1fr))}
+.card{background:var(--surf);border:1px solid var(--line);border-radius:20px;overflow:hidden;text-decoration:none;color:inherit;display:flex;flex-direction:column;transition:transform .15s,box-shadow .15s}
+.card:hover{transform:translateY(-3px);box-shadow:0 12px 26px rgba(45,12,7,.14)}
+.card img{width:100%;aspect-ratio:1/1;object-fit:cover;display:block}
+.cb{padding:16px 20px 20px;display:flex;flex-direction:column;gap:4px;flex:1}
+.card h3{font-size:19px}
+.price{margin:0;font-size:22px;font-weight:700}
+.more{color:var(--muted);font-size:14px;margin-top:auto;padding-top:8px;text-decoration:underline;text-decoration-color:var(--tan);text-underline-offset:3px}
+.about{display:grid;gap:32px;grid-template-columns:1fr 1fr;align-items:center}
+.about img{width:100%;border-radius:24px;box-shadow:0 12px 34px rgba(45,12,7,.18)}
+.gal{display:grid;gap:14px;grid-template-columns:repeat(4,1fr)}
+.gal img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:18px;display:block}
+.cta{background:var(--brown);color:var(--tan);text-align:center;border-radius:26px;padding:44px 24px}
+.cta img{height:70px;width:auto;margin:0 auto 14px;display:block}
+.cta h2{color:#fff7ec} .cta p{margin:0 0 22px;color:#ead3b3}
+.cta .btn{background:var(--tan);color:var(--brown)}
+footer{background:var(--brown);color:#ead3b3;text-align:center;padding:30px 20px 40px;font-size:14px}
+footer img{height:52px;width:auto;display:block;margin:0 auto 12px}
+footer a{color:var(--tan)}
+@media(max-width:760px){.hero .wrap.g,.about{grid-template-columns:1fr}.hero .top img{height:52px}section{padding:40px 0}.gal{grid-template-columns:repeat(2,1fr)}}
+@keyframes rise{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(222,185,140,.55)}70%{box-shadow:0 0 0 14px rgba(222,185,140,0)}100%{box-shadow:0 0 0 0 rgba(222,185,140,0)}}
+.btn{position:relative;overflow:hidden;transition:transform .2s ease,box-shadow .2s ease,background-color .2s ease,color .2s ease}
+.btn::after{content:"";position:absolute;top:0;left:-75%;width:50%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.4),transparent);transform:skewX(-20deg);transition:left .6s ease;pointer-events:none}
+.btn:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(45,12,7,.28)}
+.btn:hover::after{left:130%}
+.btn:active{transform:translateY(0) scale(.97)}
+.btn.ghost:hover{background:var(--brown);color:var(--tan)}
+.hero .btn.ghost:hover{background:var(--tan);color:var(--brown)}
+.hero .btn:not(.ghost){animation:pulse 2.6s ease-out infinite}
+.hero .btn:not(.ghost):hover{animation:none}
+.card{transition:transform .3s ease,box-shadow .3s ease}
+.card:hover{transform:translateY(-6px);box-shadow:0 18px 34px rgba(45,12,7,.2)}
+.card:active{transform:translateY(-2px) scale(.98)}
+.card img{transition:transform .5s ease}
+.card:hover img{transform:scale(1.07)}
+.card .more{transition:letter-spacing .25s ease,color .25s ease}
+.card:hover .more{color:var(--brown);letter-spacing:.03em}
+.chips li{transition:transform .2s ease,background-color .2s ease}
+.chips li:hover{transform:translateY(-2px);background:var(--tan)}
+.gal img{transition:transform .4s ease,box-shadow .4s ease}
+.gal img:hover{transform:scale(1.03);box-shadow:0 12px 28px rgba(45,12,7,.22)}
+.hero h1{animation:rise .8s ease backwards}
+.hero p{animation:rise .8s ease .12s backwards}
+.hero .btns{animation:rise .8s ease .24s backwards}
+.cover{animation:rise .9s ease .15s backwards}
+.js .rv{opacity:0}
+.js .rv.in{opacity:1;animation:rise .6s ease backwards}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.js .rv{opacity:1}}
+.order{display:grid;gap:36px;grid-template-columns:1fr 1.2fr;align-items:start}
+.steps{margin:20px 0 0;padding:0;list-style:none;counter-reset:s}
+.steps li{counter-increment:s;display:flex;gap:12px;align-items:flex-start;margin-bottom:12px}
+.steps li::before{content:counter(s);flex:none;width:30px;height:30px;border-radius:50%;background:var(--brown);color:var(--tan);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:14px}
+.fcard{background:#fff;border:1px solid var(--line);border-radius:24px;padding:28px;box-shadow:0 12px 34px rgba(45,12,7,.08)}
+.frow{display:grid;gap:16px;grid-template-columns:1fr 1fr}
+.f{display:flex;flex-direction:column;gap:6px;margin-bottom:16px}
+.f label{font-weight:600;font-size:15px}
+.f input,.f select,.f textarea{font:inherit;color:var(--text);background:var(--cream);border:1.5px solid var(--line);border-radius:12px;padding:12px 14px;width:100%;transition:border-color .2s,box-shadow .2s}
+.f textarea{min-height:110px;resize:vertical}
+.f input:focus,.f select:focus,.f textarea:focus{outline:none;border-color:var(--brown);box-shadow:0 0 0 3px rgba(222,185,140,.7)}
+.req{color:#9a3b2a}
+button.btn{border:0;font:inherit;font-weight:600;cursor:pointer}
+.note{font-size:13px;color:var(--muted);margin:12px 0 0}
+.res{display:none;margin-top:22px;padding-top:22px;border-top:1px dashed var(--line)}
+.res.on{display:block;animation:rise .5s ease backwards}
+.res textarea{font:inherit;font-size:15px;width:100%;min-height:150px;background:var(--cream);border:1.5px solid var(--line);border-radius:12px;padding:12px 14px;color:var(--text);resize:vertical}
+.res .row{display:flex;gap:12px;flex-wrap:wrap;margin-top:12px}
+.ok{margin:0 0 10px;font-weight:600}
+@media(max-width:760px){.order,.frow{grid-template-columns:1fr}}
+</style><script>document.documentElement.classList.add("js")</script></head><body>
+<header class="hero"><div class="wrap"><div class="top"><img src="images/logo-tan.png" alt="Наталья Веселова — кондитер-шоколатье"></div></div>
+<div class="wrap g">
+<div><h1>Сделаю вашу жизнь <em>слаще!</em></h1>
+<p>Готовые десерты, которые можно заказать для себя или в подарок: торты, конфеты ручной работы, пирожные и шоколадные подарки.</p>
+<div class="btns"><a class="btn" href="#order">Оставить заявку</a><a class="btn ghost" href="#prices">Смотреть цены</a></div></div>
+<img class="cover" src="images/cover-natalya.jpg" alt="Наталья Веселова покрывает шоколадным глянцем торт"></div></header>
+<section><div class="wrap"><h2>Что мы делаем</h2><p class="sub">Всё, что делает жизнь сладкой и приятной.</p><ul class="chips"><li>Торты</li><li>Конфеты ручной работы «Премиум» класса</li><li>Эклеры</li><li>Капкейки</li><li>Пирожные</li><li>Макарон</li><li>Шоколадные подарки с эффектом «Вау!»</li></ul></div></section>
+<section id="prices" class="soft"><div class="wrap"><h2>Каталог и цены</h2><p class="sub">Цены указаны так, как они опубликованы в сообществе. Нажмите на карточку, чтобы открыть товар.</p><div class="grid"><a class="card" href="https://vk.ru/market/product/tort-226032261-8993374" target="_blank" rel="noopener"><img src="images/card-tort-5500.jpg" alt="Торт" loading="lazy"><div class="cb"><h3>Торт</h3><p class="price">5 500 ₽</p><span class="more">Смотреть в ВК →</span></div></a><a class="card" href="https://vk.ru/market/product/tort-226032261-8993380" target="_blank" rel="noopener"><img src="images/card-tort-7500.jpg" alt="Торт" loading="lazy"><div class="cb"><h3>Торт</h3><p class="price">7 500 ₽</p><span class="more">Смотреть в ВК →</span></div></a><a class="card" href="https://vk.ru/market/product/tort-penek-226032261-8426687" target="_blank" rel="noopener"><img src="images/card-tort-penek.jpg" alt="Торт пенёк" loading="lazy"><div class="cb"><h3>Торт пенёк</h3><p class="price">3 000 ₽</p><span class="more">Смотреть в ВК →</span></div></a><a class="card" href="https://vk.ru/market/product/tort-shokoladnaya-bomba33-226032261-12488903" target="_blank" rel="noopener"><img src="images/card-tort-bomba.jpg" alt="Торт + шоколадная бомба!" loading="lazy"><div class="cb"><h3>Торт + шоколадная бомба!</h3><p class="price">11 000 ₽</p><span class="more">Смотреть в ВК →</span></div></a><a class="card" href="https://vk.ru/market/product/retro-pikap-226032261-8978961" target="_blank" rel="noopener"><img src="images/card-retro-pikap.jpg" alt="Ретро пикап" loading="lazy"><div class="cb"><h3>Ретро пикап</h3><p class="price">6 500 ₽</p><span class="more">Смотреть в ВК →</span></div></a><a class="card" href="https://vk.ru/market/product/korpusnye-pirozhnye-226032261-12713329" target="_blank" rel="noopener"><img src="images/card-korpusnye-pirozhnye.jpg" alt="Корпусные пирожные" loading="lazy"><div class="cb"><h3>Корпусные пирожные</h3><p class="price">1 600 ₽</p><span class="more">Смотреть в ВК →</span></div></a><a class="card" href="https://vk.ru/market/product/korpusnye-konfety-226032261-8429232" target="_blank" rel="noopener"><img src="images/card-korpusnye-konfety.jpg" alt="Корпусные конфеты" loading="lazy"><div class="cb"><h3>Корпусные конфеты</h3><p class="price">1 300 ₽</p><span class="more">Смотреть в ВК →</span></div></a><a class="card" href="https://vk.ru/market/product/tryufeli-ruchnoy-raboty-226032261-9006420" target="_blank" rel="noopener"><img src="images/card-tryufeli.jpg" alt="Трюфели ручной работы" loading="lazy"><div class="cb"><h3>Трюфели ручной работы</h3><p class="price">2 500 ₽</p><span class="more">Смотреть в ВК →</span></div></a><a class="card" href="https://vk.ru/market/product/nabor-konfet-226032261-8423019" target="_blank" rel="noopener"><img src="images/card-nabor-konfet.jpg" alt="Набор конфет" loading="lazy"><div class="cb"><h3>Набор конфет</h3><p class="price">2 000 ₽</p><span class="more">Смотреть в ВК →</span></div></a></div>
+<p style="text-align:center;margin:28px 0 0"><a class="btn ghost" href="https://vk.ru/market-226032261" target="_blank" rel="noopener">Все товары в сообществе</a></p></div></section>
+<section><div class="wrap"><h2>Наши работы</h2><p class="sub">Торты и конфеты, сделанные вручную.</p><div class="gal"><img src="images/gallery-1.jpg" alt="Торт для рыбака с фигуркой и рыбками" loading="lazy"><img src="images/gallery-2.jpg" alt="Чёрный торт с шоколадной бомбой и надписью «18»" loading="lazy"><img src="images/gallery-3.jpg" alt="Коробки шоколадных трюфелей" loading="lazy"><img src="images/gallery-4.jpg" alt="Торт-пенёк с ежиками и ягодами" loading="lazy"></div></div></section>
+<section class="soft"><div class="wrap about"><img src="images/about-desserts.jpg" alt="Десерты ручной работы в виде яблока, сливы, ягоды и кусочка сыра на деревянной доске">
+<div><h2>Десерты, которыми хочется наслаждаться</h2><p>Мы любим вкусные десерты, конфеты, торты и всё, что делает жизнь приятнее.</p><p>В сообществе я выкладываю свои готовые десерты, которые вы всегда можете заказать для себя или в подарок. Присоединяйтесь, чтобы вместе разделить радость от сладких угощений!</p></div></div></section>
+<section id="order"><div class="wrap order"><div><h2>Оставить заявку</h2><p class="sub" style="margin:0">Расскажите, что хотите заказать, и добавьте пожелания: вкус, оформление, количество, надпись на торте.</p><ol class="steps"><li><span>Заполните форму</span></li><li><span>Скопируйте готовый текст заявки</span></li><li><span>Отправьте его сообщением в сообщество во ВКонтакте</span></li></ol></div><div class="fcard"><form id="orderForm"><div class="frow"><div class="f"><label for="fname">Ваше имя <span class="req">*</span></label><input id="fname" name="name" type="text" autocomplete="name" required></div><div class="f"><label for="fcontact">Как с вами связаться <span class="req">*</span></label><input id="fcontact" name="contact" type="text" placeholder="Телефон, ВКонтакте или Telegram" required></div></div><div class="f"><label for="fproduct">Что хотите заказать <span class="req">*</span></label><select id="fproduct" name="product" required><option value="" disabled selected>Выберите из каталога</option><option>Торт — 5 500 ₽</option><option>Торт — 7 500 ₽</option><option>Торт пенёк — 3 000 ₽</option><option>Торт + шоколадная бомба! — 11 000 ₽</option><option>Ретро пикап — 6 500 ₽</option><option>Корпусные пирожные — 1 600 ₽</option><option>Корпусные конфеты — 1 300 ₽</option><option>Трюфели ручной работы — 2 500 ₽</option><option>Набор конфет — 2 000 ₽</option><option>Другое — нужна консультация</option></select></div><div class="f"><label for="fdate">Желаемая дата</label><input id="fdate" name="date" type="date"></div><div class="f"><label for="fwish">Пожелания к заказу</label><textarea id="fwish" name="wish" placeholder="Например: количество, вкус, оформление, надпись, повод"></textarea></div><button class="btn" type="submit">Подготовить заявку</button><p class="note">Сайт не отправляет заявки сам: после нажатия вы получите готовый текст, который нужно отправить сообщением в сообщество.</p></form><div class="res" id="res"><p class="ok" id="resStatus"></p><textarea id="resText" readonly aria-label="Текст заявки"></textarea><div class="row"><button class="btn" type="button" id="copyBtn">Скопировать текст</button><a class="btn ghost" href="https://vk.ru/im?sel=-226032261" target="_blank" rel="noopener">Открыть сообщения сообщества</a></div></div></div></div></section>
+<section style="padding-top:0"><div class="wrap"><div class="cta"><img src="images/icon-tan.png" alt=""><h2>Хотите заказать сладкий подарок?</h2><p>Присоединяйтесь к сообществу Натальи Веселовой во ВКонтакте.</p><a class="btn" href="https://vk.ru/club226032261" target="_blank" rel="noopener">Перейти в сообщество</a></div></div></section>
+<footer><img src="images/logo-tan.png" alt="Наталья Веселова"><div>© Наталья Веселова · <a href="https://vk.ru/club226032261" target="_blank" rel="noopener">ВКонтакте</a></div></footer>
+<script>(function(){var els=document.querySelectorAll(".card,.chips li,.gal img,.about>*,.cta");if(!("IntersectionObserver" in window)){return}var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}})},{threshold:.12});els.forEach(function(e,i){e.classList.add("rv");e.style.animationDelay=(i%4)*90+"ms";io.observe(e)})})();</script>
+<script>(function(){var f=document.getElementById("orderForm");if(!f)return;var res=document.getElementById("res"),out=document.getElementById("resText"),st=document.getElementById("resStatus"),cp=document.getElementById("copyBtn");
+function fmt(d){var m=/^(\d{4})-(\d{2})-(\d{2})$/.exec(d);return m?m[3]+"."+m[2]+"."+m[1]:d}
+function fb(t){try{out.focus();out.select();return document.execCommand("copy")}catch(e){return false}}
+function copy(t){try{if(navigator.clipboard&&navigator.clipboard.writeText){return navigator.clipboard.writeText(t).then(function(){return true},function(){return fb(t)})}}catch(e){}return Promise.resolve(fb(t))}
+f.addEventListener("submit",function(e){e.preventDefault();var v=function(n){return f.elements[n].value.trim()};
+var lines=["Здравствуйте! Хочу оформить заказ.","Имя: "+v("name"),"Контакт для связи: "+v("contact"),"Что заказать: "+v("product")];
+if(v("date"))lines.push("Желаемая дата: "+fmt(v("date")));
+if(v("wish"))lines.push("Пожелания: "+v("wish"));
+var t=lines.join("\n");out.value=t;res.classList.add("on");st.textContent="Заявка готова. Скопируйте текст и отправьте его сообщением в сообщество.";
+copy(t).then(function(ok){st.textContent=ok?"Заявка готова, текст скопирован. Откройте сообщения сообщества и вставьте его.":"Заявка готова. Нажмите «Скопировать текст» и отправьте его сообщением в сообщество."});
+res.scrollIntoView({behavior:"smooth",block:"nearest"})});
+cp.addEventListener("click",function(){copy(out.value).then(function(ok){cp.textContent=ok?"Скопировано ✓":"Выделите текст и скопируйте вручную";setTimeout(function(){cp.textContent="Скопировать текст"},2200)})})})();</script>
+</body></html>
